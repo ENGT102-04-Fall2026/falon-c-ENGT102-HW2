@@ -1,8 +1,7 @@
 # ENGT102 HW2: Pump Flow-Rate Calculator
 
-A small Python program that calculates the average volumetric flow rate of a
-water-transfer pump from the volume transferred and the elapsed time of a
-timed test.
+Python program that takes the volume a pump moved during a timed test and how
+long the test ran, and works out the average flow rate.
 
 Program: `src/pump_flow_rate.py`
 
@@ -13,9 +12,9 @@ Inputs:
 - Elapsed time of the timed test, entered by the user in seconds (s)
 
 Process:
-- Convert both text entries from the keyboard into decimal numbers with `float()`
-- Divide the volume transferred (L) by the elapsed time (s) to get the average flow rate (L/s)
-- Store the result in its own variable so it can be displayed
+- Convert both entries from text to decimal numbers with `float()`
+- Divide volume by time to get the average flow rate
+- Save the result in a variable so it can be printed
 
 Output:
 - The average volumetric flow rate of the pump, displayed in liters per second (L/s)
@@ -37,7 +36,7 @@ END
 
 ## Testing
 
-Expected values were worked out by hand before running the program.
+I did the expected values on paper before running anything.
 
 ### Test 1
 - Volume (L): 18
@@ -62,15 +61,8 @@ Expected values were worked out by hand before running the program.
 
 ## Reflection
 
-My first pseudocode read the input and converted it to a float on the same
-line. In the Python program I split that into two steps: one variable holds
-the raw text from `input()`, and a second holds the `float()` result.
-Keeping the text and numeric values separate makes it clear where the
-conversion happens and gives the variables more descriptive names, so I
-updated the pseudocode to match.
-
-The tests gave me confidence because I calculated every expected value by
-hand before running the program and compared it to the actual output. They
-covered a whole-number result, a result less than one, and a decimal input.
-All three matched exactly, showing the inputs were converted correctly and
-the division was set up in the right order.
+My first pseudocode did the input and the float conversion on one line. When
+I typed the actual program I split it into two variables, one holding the
+text from `input()` and one holding the float, because it was easier to see
+where the conversion happens. I went back and changed the pseudocode to
+match.
