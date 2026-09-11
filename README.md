@@ -64,13 +64,13 @@ Expected values were worked out by hand before running the program.
 
 My first pseudocode read the input and converted it to a float on the same
 line. When I wrote the Python program I split each of those into two steps:
-one variable holds the raw text from `input()`, and a second variable holds
-the `float()` result. Keeping the text and numeric values separate made it
-easier to see where the conversion happens and made the variable names more
-descriptive, so I updated the pseudocode to match.
+one variable holds the raw text from `input()`, and a second holds the
+`float()` result. Keeping the text and numeric values separate made it clear
+where the conversion happens and gave the variables more descriptive names,
+so I updated the pseudocode to match.
 
 The test cases gave me confidence because I calculated every expected value
-by hand before running the program, then compared it to the actual output.
+by hand before running the program and compared it to the actual output.
 The tests covered a whole-number result, a result less than one, and a
-decimal input, and all three matched exactly. That showed the inputs were
+decimal input, and all three matched exactly, showing the inputs were
 converted correctly and the division was set up in the right order.
