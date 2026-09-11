@@ -34,3 +34,28 @@ SET flow_rate_lps to volume_liters divided by elapsed_seconds
 DISPLAY "Average flow rate: " followed by flow_rate_lps and the unit "L/s"
 END
 ```
+
+## Testing
+
+Expected values were worked out by hand before running the program.
+
+### Test 1
+- Volume (L): 18
+- Time (s): 12
+- Expected Flow Rate (L/s): 18 / 12 = 1.5
+- Actual Flow Rate (L/s): 1.5
+- Result: Pass
+
+### Test 2
+- Volume (L): 25
+- Time (s): 40
+- Expected Flow Rate (L/s): 25 / 40 = 0.625
+- Actual Flow Rate (L/s): 0.625
+- Result: Pass
+
+### Test 3
+- Volume (L): 7.5
+- Time (s): 3
+- Expected Flow Rate (L/s): 7.5 / 3 = 2.5
+- Actual Flow Rate (L/s): 2.5
+- Result: Pass
