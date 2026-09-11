@@ -59,3 +59,18 @@ Expected values were worked out by hand before running the program.
 - Expected Flow Rate (L/s): 7.5 / 3 = 2.5
 - Actual Flow Rate (L/s): 2.5
 - Result: Pass
+
+## Reflection
+
+My first pseudocode read the input and converted it to a float on the same
+line. When I wrote the Python program I split each of those into two steps:
+one variable holds the raw text from `input()`, and a second variable holds
+the `float()` result. Keeping the text and numeric values separate made it
+easier to see where the conversion happens and made the variable names more
+descriptive, so I updated the pseudocode to match.
+
+The test cases gave me confidence because I calculated every expected value
+by hand before running the program, then compared it to the actual output.
+The tests covered a whole-number result, a result less than one, and a
+decimal input, and all three matched exactly. That showed the inputs were
+converted correctly and the division was set up in the right order.
